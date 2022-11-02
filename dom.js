@@ -1,6 +1,6 @@
 ( () => {
 
-    console.log(window)
+    console.log("HALLO NERD :)")
 
 } )();
 
@@ -11,16 +11,23 @@ function DOM(
         inner: [], 
         todo: null}
         ) {
+
     let a = document.createElement(element),
     attr = data ? data.attr : {},
     inner = data ? data.inner : '',
     todo = data ? data.todo : null;
+
     if (attr) {
         Object.keys(attr).forEach((b) => {
             let normalize = b.replace(/[A-Z]/g, '-$&').toLowerCase();
             a.setAttribute(normalize, attr[b]);
         });
     }
+
+    /**
+     * 
+     * @param {Mix} c = apapun yang akan di masukan ke element 
+     */
     a.setInner = (c) => {
         switch (typeof c) {
             case 'boolean':
@@ -51,6 +58,12 @@ function DOM(
         return a.innerHTML;
     };
 
+    /**
+     *  event ketika input dengan rule sebagai berikut
+     * @param {int} minLength - Maximum karakter
+     * @param {int} maxLength - Minimum karakter
+     * @param {regex} exeption - Karakter ilegal
+     */
     a.onInput = function(minLength, maxLength, exeption = "//g") {
         a.addEventListener("keypress", event => {
             if (event.keyCode != 8 && event.key.match(exeption)) {
