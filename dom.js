@@ -4,13 +4,13 @@
 
 } )();
 
-function DOM(
+var DOM = (
     element = "div", 
     data = {
         attr: {}, 
         inner: [], 
         todo: null}
-        ) {
+        ) => {
 
     let a = document.createElement(element),
     attr = data ? data.attr : {},
