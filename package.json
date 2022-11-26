@@ -1,0 +1,24 @@
+{
+  "name": "newdom",
+  "version": "1.0.0",
+  "description": "create DOM element easiest",
+  "main": "dom.js",
+  "scripts": {
+    "test": "console.log((\"div\", { inner: \"hallo world\"; }))"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilh4mb/DOMCREATE.git"
+  },
+  "keywords": [
+    "DOM",
+    "JavaScript",
+    "html"
+  ],
+  "author": "ilham B",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/ilh4mb/DOMCREATE/issues"
+  },
+  "homepage": "https://github.com/ilh4mb/DOMCREATE#readme"
+}
