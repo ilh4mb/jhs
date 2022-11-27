@@ -1,6 +1,6 @@
 {
   "name": "newdom",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "create DOM element easiest",
   "main": "./index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "html"
   ],
   "author": "ilham B",
-  "license": "CC0-1.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/ilh4mb/newdom/issues"
   },
