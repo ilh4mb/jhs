@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
- var DOM = (
+ export function DOM(
     element = "div",
     data = {
         attr: {},
         inner: [],
         todo: null
     }
-) => {
+) {
 
     let a = document.createElement(element),
         attr = data ? data.attr : {},
@@ -113,5 +113,3 @@
 
     return a;
 }
-
-export {DOM};
