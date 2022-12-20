@@ -29,8 +29,12 @@ var jhs = (element, meta) => {
     el.inner = (value) => {
         switch (typeof value) {
             case 'function':
-                el.innerHTML = null;
-                el.append(value(a));
+
+                let o = value(a);
+                if (o) {
+                    el.innerHTML = null;
+                    el.append(o);
+                }
                 break;
 
             case 'boolean':
@@ -40,7 +44,7 @@ var jhs = (element, meta) => {
 
             case 'object':
                 if (Array.isArray(value)) {
-                    value.forEach( d => {
+                    value.forEach(d => {
                         el.append(d);
                     });
                 } else {
@@ -55,7 +59,7 @@ var jhs = (element, meta) => {
     };
 
     el.attr = (attr, value) => {
-        if (! value) value = false;
+        if (!value) value = false;
         el.setAttribute(attr, value);
     };
 
