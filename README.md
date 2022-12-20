@@ -1,1 +1,1 @@
-# BHA BHA KAMU NANYA .... ??
+# Hanya kode seherhana untuk memudahkan membuat HTML-DOM
